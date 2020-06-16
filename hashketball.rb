@@ -170,6 +170,7 @@ end
 
 
 def search_teams(team_name)
+  binding.pry
   if game_hash.any?{|i| i[:team_name]==team_name}
     game_hash[:home][:team_name]==team_name? game_hash[:home] : game_hash[:away]
   else
