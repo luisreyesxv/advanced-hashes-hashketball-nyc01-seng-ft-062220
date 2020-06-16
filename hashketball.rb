@@ -143,7 +143,7 @@ end
 def team_names
   game_hash.each_with_object([]) {|(key,value),teams|  team.push(value[:team_names]) }
 end
-
+ binding.pry
 
 
 
