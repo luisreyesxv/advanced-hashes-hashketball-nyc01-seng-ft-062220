@@ -173,7 +173,7 @@ def big_shoe_rebounds
       end
     end
   end
-  answer[:rebound]
+  biggest_shoe[:rebound]
 
 end
 
