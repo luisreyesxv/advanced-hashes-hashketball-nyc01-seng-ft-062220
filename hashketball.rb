@@ -149,7 +149,7 @@ end
 def player_numbers(team)
   search_teams(team)[:players].each_with_object([]) do |player_data,jersey_numbers|
     jersey_numbers << player_data[:number]
-  end  
+  end
 end
 
 
