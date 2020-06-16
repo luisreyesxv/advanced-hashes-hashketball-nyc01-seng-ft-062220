@@ -180,7 +180,7 @@ end
 
 
 
-#helps me find index of the player
+#helper methods to help me specify some information
 def search_player_stats(name_of_player)
   if game_hash[:home][:players].find_index {|i| i[:player_name]== name_of_player}
     player_index = game_hash[:home][:players].find_index {|i| i[:player_name]== name_of_player}
@@ -204,3 +204,23 @@ def search_teams(team)
     return "Sorry, but the team doesn't exist yet."
   end
 end
+
+
+def search_most_1_symbol_metric (metric_searched_by,result)
+  answer= Hash.new
+   game_hash.each do |home_or_away, team_data|
+    team_data[:players].each do |player_data|
+      if biggest_shoe.empty?
+        biggest_shoe[:player_name] = player_data[:player_name]
+        biggest_shoe[:shoe] = player_data[:shoe]
+        biggest_shoe[:rebounds] = player_data[:rebounds]
+      end
+      if player_data[:shoe] > biggest_shoe[:shoe]
+        biggest_shoe[:player_name] = player_data[:player_name]
+        biggest_shoe[:shoe] = player_data[:shoe]
+        biggest_shoe[:rebounds] = player_data[:rebounds]
+      end
+    end
+  end
+  biggest_shoe[:rebounds]
+
