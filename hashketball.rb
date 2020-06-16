@@ -210,16 +210,16 @@ def search_most_1_symbol_metric (metric_searched_by,result)
   answer= Hash.new
    game_hash.each do |home_or_away, team_data|
     team_data[:players].each do |player_data|
-      if biggest_shoe.empty?
-        biggest_shoe[:player_name] = player_data[:player_name]
-        biggest_shoe[:shoe] = player_data[:shoe]
-        biggest_shoe[:rebounds] = player_data[:rebounds]
+      if answer.empty?
+        answer[:player_name] = player_data[:player_name]
+        answer[metric_searched_by] = player_data[metric_searched_by]
+        answer[result] = player_data[result]
       end
-      if player_data[:shoe] > biggest_shoe[:shoe]
-        biggest_shoe[:player_name] = player_data[:player_name]
-        biggest_shoe[:shoe] = player_data[:shoe]
-        biggest_shoe[:rebounds] = player_data[:rebounds]
+      if player_data[metric_searched_by] > answer[metric_searched_by]
+        answer[:player_name] = player_data[:player_name]
+        answer[metric_searched_by] = player_data[metric_searched_by]
+        answer[result] = player_data[result]
       end
     end
   end
-  biggest_shoe[:rebounds]
+  answer[result]
