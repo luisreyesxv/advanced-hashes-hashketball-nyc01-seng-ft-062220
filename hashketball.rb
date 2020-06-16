@@ -144,7 +144,6 @@ def team_names
 
   game_hash.each_with_object([]) {|(key,value),teams|  value[:team_names]) }
 end
- binding.pry
 
 
 
