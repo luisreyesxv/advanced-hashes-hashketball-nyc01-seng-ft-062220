@@ -79,7 +79,7 @@ def game_hash
           slam_dunks: 2
         },
         {
-          player_name: "Bismack Biyombo",
+          player_name: "luis",
           number: 0,
           shoe: 16,
           points: 12,
