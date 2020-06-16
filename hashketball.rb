@@ -166,8 +166,8 @@ def search_player_stats(name_of_player)
   else
     game_hash[:away][:players][player_index]
   end
-
-  #game_hash.select do |home_or_away_key,team_data|
-  #  team_data[:players][:player_name].index(name_of_player)
-  #end
 end
+
+
+def search_teams(team_name)
+  game_hash[:home][:team_name]? game_hash[:home] : game_hash[:away]
