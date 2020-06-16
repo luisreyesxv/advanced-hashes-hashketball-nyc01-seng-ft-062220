@@ -135,7 +135,7 @@ def shoe_size(player)
   search_player_stats(player)[:shoe]
 end
 
-def team_colors (team)
+def team_colors
   search_teams(team)[:colors]
 
 end
