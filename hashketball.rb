@@ -141,7 +141,7 @@ def search_player_stats(name_of_player)
     player_index = game_hash[:away][:players].find_index {|i| i[:player_name]== name_of_player}
   end
 
-game_hash.find do |key,value| 
+game_hash.find do |key,value|
   binding.pry
   key[:players][player_index][:player_name]==name_of_player}
 
