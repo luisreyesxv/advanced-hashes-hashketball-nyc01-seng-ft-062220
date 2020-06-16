@@ -158,8 +158,9 @@ end
 
 
 def big_shoe_rebounds
-  answer= game_hash.each_with_object({}) do |home_or_away, team_data|
-    team_data[:players].each_with_object({}) do |player_data,biggest_shoe|
+  biggest_shoe= Hash.new
+   game_hash.each do |home_or_away, team_data|
+    team_data[:players].each do |player_data|
       if biggest_shoe.empty?
         biggest_shoe[:player_name] = player_data[:player_name]
         biggest_shoe[:shoe] = player_data[:shoe]
