@@ -173,8 +173,7 @@ def big_shoe_rebounds
       end
     end
   end
-  binding.pry
-  biggest_shoe[:rebound]
+  biggest_shoe[:rebounds]
 
 end
 
