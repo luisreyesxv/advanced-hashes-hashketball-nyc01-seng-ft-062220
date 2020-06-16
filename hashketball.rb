@@ -166,7 +166,7 @@ def most_points_scored
 end
 
 def long_name_steals_a_ton
-  
+
 
 #helper methods to help me specify some information
 def search_player_stats(name_of_player)
