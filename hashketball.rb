@@ -163,7 +163,7 @@ def big_shoe_rebounds
 end
 
 def most_points_scored
-  puts (:points,:player_name)
+  puts search_most_1_symbol_metric(:points,:player_name)
 
 end
 most_points_scored
