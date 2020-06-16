@@ -158,7 +158,7 @@ end
 
 
 def big_shoe_rebounds
-  search_most_1_symbol_metric (:shoe,:rebounds)
+  search_most_1_symbol_metric (:shoe ,:rebounds)
 
 end
 
