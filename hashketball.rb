@@ -176,9 +176,9 @@ def long_name_steals_a_ton
         answer[:player_name] = player_data[:player_name]
       end
     end
-  end
+   end
   answer[:player_name] == search_most_1_symbol_metric(:steals,:player_name)
-
+end
 #helper methods to help me specify some information
 def search_player_stats(name_of_player)
   if game_hash[:home][:players].find_index {|i| i[:player_name]== name_of_player}
