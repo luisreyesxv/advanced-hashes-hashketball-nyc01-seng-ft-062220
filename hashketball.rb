@@ -223,4 +223,3 @@ def search_most_1_symbol_metric (metric_searched_by,result)
     end
   end
   biggest_shoe[:rebounds]
-
