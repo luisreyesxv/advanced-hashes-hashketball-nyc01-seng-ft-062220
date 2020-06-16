@@ -164,7 +164,7 @@ end
 
 def most_points_scored
   puts (:points,:player_name)
-  
+
 end
 most_points_scored
 #helper methods to help me specify some information
