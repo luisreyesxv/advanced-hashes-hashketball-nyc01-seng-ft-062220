@@ -141,6 +141,7 @@ def team_colors (team)
 end
 
 def team_names(team)
+  binding.pry
   game_hash.each_with_object([]) {|(key,value),teams|  team.push(value[:team_names]) }
 end
  binding.pry
