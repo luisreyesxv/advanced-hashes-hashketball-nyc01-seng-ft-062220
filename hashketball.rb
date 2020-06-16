@@ -170,7 +170,7 @@ def big_shoe_rebounds
         biggest_shoe[:player_name] = player_data[:player_name]
         biggest_shoe[:shoe] = player_data[:shoe]
         biggest_shoe[:rebound] = player_data[:rebound]
-      end  
+      end
     end
 end
 
