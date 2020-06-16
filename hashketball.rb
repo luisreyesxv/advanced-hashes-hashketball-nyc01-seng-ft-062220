@@ -128,14 +128,17 @@ def game_hash
 end
 
 def num_points_scored(player)
-
   search_player(player)
+
+  
 end
+
+#helps me find index of the player
 def search_player(name_of_player)
   if game_hash[:home][:players].find_index {|i| i[:player_name]== name_of_player}
-    game_hash[:home][:players].find_index {|i| i[:player_name]== name_of_player}
+    player_index =vgame_hash[:home][:players].find_index {|i| i[:player_name]== name_of_player}
   else
-    game_hash[:away][:players].find_index {|i| i[:player_name]== name_of_player}
+    player_index = game_hash[:away][:players].find_index {|i| i[:player_name]== name_of_player}
   end
   #game_hash.select do |home_or_away_key,team_data|
   #  team_data[:players][:player_name].index(name_of_player)
