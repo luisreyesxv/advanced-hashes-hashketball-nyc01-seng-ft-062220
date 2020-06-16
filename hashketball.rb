@@ -142,7 +142,9 @@ end
 
 def team_names
 
-  game_hash.each_with_object([]) {|(key,value),teams|  teams << value[:team_names] }
+  game_hash.each_with_object([]) do |(key,value),teams|  
+    teams << value[:team_names]
+  end  
 end
 
 
