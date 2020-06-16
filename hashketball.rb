@@ -143,7 +143,7 @@ def search_player_stats(name_of_player)
 
 game_hash.find do |key,value|
   binding.pry
-  
+
   #key[:players][player_index][:player_name]==name_of_player}
 
 end
