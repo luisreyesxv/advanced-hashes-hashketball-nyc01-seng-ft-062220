@@ -166,7 +166,7 @@ def most_points_scored
 end
 
 def long_name_steals_a_ton
-  
+
   search_most_1_symbol_metric(:steals,:player_name)
 
 #helper methods to help me specify some information
@@ -229,5 +229,3 @@ answer= Hash.new
 end
 answer[:player_name]
 end
-
-
