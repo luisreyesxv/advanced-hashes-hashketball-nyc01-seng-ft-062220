@@ -140,7 +140,7 @@ def search_player_stats(name_of_player)
   else
     player_index = game_hash[:away][:players].find_index {|i| i[:player_name]== name_of_player}
   end
-
+binding.pry
 game_hash.find {|i| i[:players][player_index][:player]==name_of_player}
 
   #game_hash.select do |home_or_away_key,team_data|
