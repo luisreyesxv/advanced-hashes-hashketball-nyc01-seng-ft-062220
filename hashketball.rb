@@ -129,9 +129,10 @@ end
 
 def num_points_scored(player)
   search_player_stats(player)[:points]
-
-
 end
+
+def shoe_size(player)
+  search_player_stats(player)[:shoe]
 
 #helps me find index of the player
 def search_player_stats(name_of_player)
