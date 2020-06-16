@@ -154,7 +154,7 @@ end
 
 def player_stats(player)
   search_player_stats(player)
-end  
+end
 
 
 
