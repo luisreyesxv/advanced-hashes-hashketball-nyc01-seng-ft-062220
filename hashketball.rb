@@ -177,7 +177,7 @@ def long_name_steals_a_ton
       end
     end
    end
-  answer[:player_name] == search_most_1_symbol_metric(:steals,:player_name)
+  puts answer[:player_name] == search_most_1_symbol_metric(:steals,:player_name)
 end
 #helper methods to help me specify some information
 def search_player_stats(name_of_player)
