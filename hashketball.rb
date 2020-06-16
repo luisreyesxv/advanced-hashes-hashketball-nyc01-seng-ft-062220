@@ -172,7 +172,7 @@ end
 def search_teams(team)
 
   if game_hash.any?{|key,value| value[:team_name]==team}
-    game_hash[:home][:team_name]==team? game_hash[:home] : game_hash[:away]
+    game_hash[:home][:team_name]==team ? game_hash[:home] : game_hash[:away]
   else
     return "Sorry, but the team doesn't exist yet."
   end
