@@ -159,13 +159,14 @@ end
 
 def big_shoe_rebounds
   search_most_1_symbol_metric(:shoe ,:rebounds)
-
 end
 
 def most_points_scored
-  puts search_most_1_symbol_metric(:points,:player_name)
-
+  search_most_1_symbol_metric(:points,:player_name)
 end
+
+def long_name_steals_a_ton
+  
 
 #helper methods to help me specify some information
 def search_player_stats(name_of_player)
@@ -191,6 +192,7 @@ def search_teams(team)
     return "Sorry, but the team doesn't exist yet."
   end
 end
+
 
 
 def search_most_1_symbol_metric (metric_searched_by,result)
