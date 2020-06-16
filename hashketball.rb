@@ -136,7 +136,7 @@ def shoe_size(player)
 end
 
 def team_colors (team_name)
-  search_teams(team_name)
+  search_teams(team_name)[:colors]
 
 end
 
