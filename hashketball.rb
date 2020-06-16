@@ -130,7 +130,7 @@ end
 def num_points_scored(player)
   search_player(player)
 
-  
+
 end
 
 #helps me find index of the player
