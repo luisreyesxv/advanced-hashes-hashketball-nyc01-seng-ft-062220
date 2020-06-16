@@ -212,4 +212,3 @@ def search_most_1_symbol_metric (metric_searched_by,result)
   answer[result]
 end
 
-most_points_scored
