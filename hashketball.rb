@@ -164,12 +164,12 @@ def big_shoe_rebounds
       if biggest_shoe.empty?
         biggest_shoe[:player_name] = player_data[:player_name]
         biggest_shoe[:shoe] = player_data[:shoe]
-        biggest_shoe[:rebound] = player_data[:rebound]
+        biggest_shoe[:rebounds] = player_data[:rebounds]
       end
       if player_data[:shoe] > biggest_shoe[:shoe]
         biggest_shoe[:player_name] = player_data[:player_name]
         biggest_shoe[:shoe] = player_data[:shoe]
-        biggest_shoe[:rebound] = player_data[:rebound]
+        biggest_shoe[:rebounds] = player_data[:rebounds]
       end
     end
   end
