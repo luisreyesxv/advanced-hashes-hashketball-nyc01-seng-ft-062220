@@ -166,7 +166,8 @@ def most_points_scored
 end
 
 def long_name_steals_a_ton
-
+  
+  search_most_1_symbol_metric(:steals,:player_name)
 
 #helper methods to help me specify some information
 def search_player_stats(name_of_player)
@@ -213,3 +214,20 @@ def search_most_1_symbol_metric (metric_searched_by,result)
   end
   answer[result]
 end
+
+
+answer= Hash.new
+ game_hash.each do |home_or_away, team_data|
+  team_data[:players].each do |player_data|
+    if answer.empty?
+      answer[:player_name] = player_data[:player_name]
+    end
+    if player_data[:player_name].length > answer[:player_name].length
+      answer[:player_name] = player_data[:player_name]
+    end
+  end
+end
+answer[:player_name]
+end
+
+
