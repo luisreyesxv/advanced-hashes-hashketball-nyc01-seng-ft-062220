@@ -163,9 +163,10 @@ def big_shoe_rebounds
 end
 
 def most_points_scored
-  search_most_1_symbol_metric(:points,:player_name)
+  puts (:points,:player_name)
+  
 end
-
+most_points_scored
 #helper methods to help me specify some information
 def search_player_stats(name_of_player)
   if game_hash[:home][:players].find_index {|i| i[:player_name]== name_of_player}
