@@ -132,7 +132,10 @@ def num_points_scored(player)
   search_player(player)
 end
 def search_player(name_of_player)
-  test  = game_hash[:home][:players].find_index {|i| i[:player_name]== name_of_player}
+  if game_hash[:home][:players].find_index {|i| i[:player_name]== name_of_player}
+    game_hash[:home][:players].find_index {|i| i[:player_name]== name_of_player}
+  else
+    game_hash[:away][:players].find_index {|i| i[:player_name]== name_of_player}  
   binding.pry
   #game_hash.select do |home_or_away_key,team_data|
   #  team_data[:players][:player_name].index(name_of_player)
