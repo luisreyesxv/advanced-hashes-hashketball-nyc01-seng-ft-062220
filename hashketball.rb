@@ -131,7 +131,7 @@ def num_points_scored(player)
   search_player(player)
 end
 def search_player(player_name)
-  game_hash.first do |home_or_away_key,team_data|
+  game_hash.map do |home_or_away_key,team_data|
     team_date[:players][:player_name].index(player_name)
   end
 end
