@@ -159,7 +159,7 @@ end
 
 def big_shoe_rebounds
   game_hash.each do |home_or_away, team_data|
-    team_date[:players].each_with_object({}) do |player_data,biggest_shoe|
+    team_data[:players].each_with_object({}) do |player_data,biggest_shoe|
       binding.pry
       if !biggest_shoe || player_data  [:shoe] > biggest_shoe[:shoe]
         biggest_shoe[:player_name] = player_data[:player_name]
